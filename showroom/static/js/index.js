@@ -32,7 +32,6 @@ $(function () {
     });
     $('.countrylist').on({
         "change.select2": function (e) {
-            console.log('country changed');
             searchFilters.country = getCountries(this);
             getCatalog();
         }

@@ -9,16 +9,18 @@
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
 {% block content %}
-<div class="filters">
-    <br><br>
-    <label for="name">Name :</label><br>
-    <input type="text" name="name" id="name"><br>
-    <label for="year">Year :</label><br>
-    <input type="text" name="year" id="year"><br>
-    <label for="grape">Grapes :</label><br>
-    <input type="text" name="grape" id="grape"><br>
-    <label for="country">Countries :</label><br>
-    <select class="countrylist" multiple="multiple" name="country"></select>
+<div class="filterContainer">
+    <div class="filters">
+        <br><br>
+        <label for="name">Name :</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="year">Year :</label><br>
+        <input type="text" name="year" id="year"><br>
+        <label for="grape">Grapes :</label><br>
+        <input type="text" name="grape" id="grape"><br>
+        <label for="country">Countries :</label><br>
+        <select class="countrylist" multiple="multiple" name="country"></select>
+    </div>
 </div>
 <div class="info">
     <h1>MyCave</h1>
