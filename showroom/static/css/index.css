@@ -31,6 +31,10 @@
 }
 
 @media screen and (min-width: 480px) {
+    #catalog {
+        top: 50px;
+    }
+
     .info > h1 {
         font-size: 8vw;
     }
