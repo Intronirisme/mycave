@@ -1,7 +1,24 @@
 #catalog {
-    position: absolute;
-    top: 300px;
+    position: relative;
+    top: 100px;
     width: 100%;
+}
+
+.info {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: teal;
+}
+
+.info > h1 {
+    font-size: 12vw;
+}
+
+.info > h3 {
+    font-size: 10vw;
 }
 
 .flexContainer {
@@ -14,7 +31,11 @@
 }
 
 @media screen and (min-width: 480px) {
-    #catalog {
-        top: 500px;
+    .info > h1 {
+        font-size: 8vw;
+    }
+    
+    .info > h3 {
+        font-size: 5vw;
     }
 }

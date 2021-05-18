@@ -6,13 +6,13 @@ label {
     width: 100vw;
     height: auto;
     overflow-x: hidden;
-}
-
-.filters {
     position: -webkit-sticky;
     position: sticky;
     z-index: 2;
     top: 0;
+}
+
+.filters {
     width: 400px;
     height: 400px;
     background-color: #a74e4e;
@@ -34,32 +34,8 @@ input {
     clip-path: circle(280px at 80px 80px);
 }
 
-.info {
-    position: relative;
-    top: -420px;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    color: teal;
-}
-
-.info > h1 {
-    font-size: 12vw;
-}
-
-.info > h3 {
-    font-size: 10vw;
-}
-
 @media screen and (min-width: 480px) {
     label, input, .countrylist {
         width: 40%;
-    }
-    .info > h1 {
-        font-size: 8vw;
-    }
-    
-    .info > h3 {
-        font-size: 5vw;
     }
 }
