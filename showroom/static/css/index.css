@@ -1,0 +1,20 @@
+#catalog {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+}
+
+.flexContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+@media screen and (min-width: 480px) {
+    #catalog {
+        top: 500px;
+    }
+}

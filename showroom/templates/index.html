@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrastyle %}
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&family=Merriweather:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/filter.css' %}">
+<link rel="stylesheet" href="{% static 'css/card.css' %}">
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+{% block content %}
+<div class="filters">
+    <br><br>
+    <label for="name">Name :</label><br>
+    <input type="text" name="name" id="name"><br>
+    <label for="year">Year :</label><br>
+    <input type="text" name="year" id="year"><br>
+    <label for="grape">Grapes :</label><br>
+    <input type="text" name="grape" id="grape"><br>
+    <label for="country">Countries :</label><br>
+    <select class="countrylist" multiple="multiple" name="country"></select>
+</div>
+<div class="info">
+    <h1>MyCave</h1>
+    <h3>Nos vins sont bons, nos cuites aussi !</h3>
+</div>
+<div class="flexContainer" id="catalog">
+    
+</div>
+{% endblock %}
+{% block extrascript %}
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+{% endblock %}

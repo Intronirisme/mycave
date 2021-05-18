@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #eeeeee;
+}
+
+nav {
+    height: 50px;
+    background-color: #cccccc;
+}

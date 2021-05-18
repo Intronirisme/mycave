@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyCave administrez votre cuite !">
+    <title>{% block title %}MyCave{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block extrastyle %}
+    {% endblock %}
+</head>
+<body>
+    <nav>
+        <a href="{% url 'mycave' %}">
+            <img id="logo" src="/media/logo/logo.png" alt="logo mycave">
+        </a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    {% block extrascript %}
+    {% endblock %}
+</body>
+</html>
