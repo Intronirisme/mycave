@@ -4,8 +4,7 @@ label {
 
 .filterContainer {
     width: 100vw;
-    height: auto;
-    overflow-x: hidden;
+    height: 0;
     position: -webkit-sticky;
     position: sticky;
     z-index: 2;
