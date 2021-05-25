@@ -44,7 +44,7 @@ $(function () {
             data: searchFilters,
             success: function (response) {
                 $('#catalog').empty();
-                response.forEach(data => $('#catalog').append(wineCard(data)) );
+                response.forEach(data => $('#catalog').append( wineCard(data) ) );
             },
             error: function () {
                 console.log("error");
